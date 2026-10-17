@@ -1,0 +1,16 @@
+{
+  "Id": "GadgetMirror",
+  "DisplayName": "Gadget Mirror (Multiplayer)",
+  "Author": "mthuermer",
+  "Version": "0.7.0",
+  "ManagerVersion": "0.27.3",
+  "AssemblyName": "GadgetMirror.dll",
+  "EntryMethod": "GadgetMirror.Main.Load",
+  "Requirements": [
+    "Multiplayer"
+  ],
+  "LoadAfter": [
+    "Multiplayer"
+  ],
+  "MultiplayerCompatibility": "All"
+}
