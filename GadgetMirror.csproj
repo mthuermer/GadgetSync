@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>GadgetMirror</AssemblyName>
+    <RootNamespace>GadgetMirror</RootNamespace>
+    <LangVersion>7.3</LangVersion>
+    <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <NoWarn>CS0436;NU1701</NoWarn>
+    <DVManaged>C:\Program Files (x86)\Steam\steamapps\common\Derail Valley\DerailValley_Data\Managed</DVManaged>
+    <DVMods>C:\Program Files (x86)\Steam\steamapps\common\Derail Valley\Mods</DVMods>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(DVManaged)\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="DV.Utils"><HintPath>$(DVManaged)\DV.Utils.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="DV.Common"><HintPath>$(DVManaged)\DV.Common.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="DV.ThingTypes"><HintPath>$(DVManaged)\DV.ThingTypes.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="DV.CabControls.Spec"><HintPath>$(DVManaged)\DV.CabControls.Spec.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="DV.Inventory"><HintPath>$(DVManaged)\DV.Inventory.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="DV.NAudio"><HintPath>$(DVManaged)\DV.NAudio.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.AudioModule"><HintPath>$(DVManaged)\UnityEngine.AudioModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Newtonsoft.Json"><HintPath>$(DVManaged)\Newtonsoft.Json.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine"><HintPath>$(DVManaged)\UnityEngine.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(DVManaged)\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.PhysicsModule"><HintPath>$(DVManaged)\UnityEngine.PhysicsModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityModManager"><HintPath>$(DVManaged)\UnityModManager\UnityModManager.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(DVManaged)\UnityModManager\0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="MultiplayerAPI"><HintPath>$(DVMods)\Multiplayer\MultiplayerAPI.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+
+</Project>
